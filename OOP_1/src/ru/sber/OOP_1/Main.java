@@ -63,10 +63,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
-//        PhoneDemonstration();
+        PhoneDemonstration();
         System.out.println();
 
-//        CircleDemonstration();
+        CircleDemonstration();
         System.out.println();
 
         MatrixDemonstration();
