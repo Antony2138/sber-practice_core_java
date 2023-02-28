@@ -51,6 +51,10 @@ public class Main {
             }
         }
 
+        baseMatrix
+                .add(additionMatrix)
+                .print();
+
         Matrix multiplyMatrix = new Matrix(9, 6);
         for (int i = 0; i < multiplyMatrix.rowCount; i++) {
             for (int j = 0; j < multiplyMatrix.columnCount; j++) {
@@ -63,10 +67,10 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        PhoneDemonstration();
+//        PhoneDemonstration();
         System.out.println();
 
-        CircleDemonstration();
+//        CircleDemonstration();
         System.out.println();
 
         MatrixDemonstration();
