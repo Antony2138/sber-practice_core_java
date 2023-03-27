@@ -81,6 +81,26 @@ public class Main {
         System.out.println(cleanCode);
     }
 
+    private static void PizzaOrderDemonstration() {
+        PizzaOrder pizzaOrder = new PizzaOrder("Сырная", "Петушкова 227", PizzaSize.BIG, false);
+        System.out.println(pizzaOrder);
+
+        pizzaOrder.setSauce(true);
+        pizzaOrder.setSize(PizzaSize.BIG);
+
+        pizzaOrder.order();
+        System.out.println(pizzaOrder);
+
+        pizzaOrder.cancel();
+        pizzaOrder.cancel();
+        System.out.println(pizzaOrder);
+
+        pizzaOrder.setAddress("Петросянская 8А");
+        pizzaOrder.order();
+        pizzaOrder.order();
+        System.out.println(pizzaOrder);
+    }
+
 
     public static void main(String[] args) {
         PhoneDemonstration();
@@ -94,5 +114,9 @@ public class Main {
 
         BookDemonstration();
         System.out.println();
+
+        PizzaOrderDemonstration();
+        System.out.println();
+
     }
 }
