@@ -22,8 +22,6 @@ public class Main {
 
         System.out.format("Площадь круга: %f\n", Circle.area());
         System.out.format("Периметр круга: %f\n", Circle.perimeter());
-
-        // Метод toString применяет округление до 3 чисел после запятой для площади и периметра
         System.out.println(Circle);
     }
 
@@ -66,14 +64,35 @@ public class Main {
         baseMatrix.multiply(multiplyMatrix).print();
     }
 
+    private static void BookDemonstration(){
+        Author danzel = new Author("Дензел Вашингтон", "Мужчина", "askyourans@mail.com");
+        Book alice = new Book("Почта России", danzel, 1365);
+
+        System.out.println(danzel);
+        System.out.println(alice);
+
+        Author annaSemenovich = new Author("Анна Семенович", "Женщина", null);
+        annaSemenovich.setEmail("askyourans@mail.com");
+
+        Book cleanCode = new Book("Год века", annaSemenovich, 2016);
+        cleanCode.setYear(200);
+
+        System.out.println(annaSemenovich);
+        System.out.println(cleanCode);
+    }
+
+
     public static void main(String[] args) {
-//        PhoneDemonstration();
+        PhoneDemonstration();
         System.out.println();
 
-//        CircleDemonstration();
+        CircleDemonstration();
         System.out.println();
 
         MatrixDemonstration();
+        System.out.println();
+
+        BookDemonstration();
         System.out.println();
     }
 }
