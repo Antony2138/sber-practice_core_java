@@ -2,6 +2,6 @@ package ru.sber.Lambdas;
 
 import java.util.*;
 
-interface Sounding {
+interface Sounding{
     void sound();
 }

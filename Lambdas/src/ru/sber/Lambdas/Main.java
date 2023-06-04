@@ -1,7 +1,7 @@
 package ru.sber.Lambdas;
 import java.util.ArrayList;
 import java.util.List;
-public class Main {
+public class Main  {
     public static void main(String[] args) {
         List<Sounding> list = new ArrayList<>();
         list.add(new Cat());
@@ -13,7 +13,7 @@ public class Main {
         list.add(new Sounding() {
             @Override
             public void sound() {
-                System.out.println("kukareku");
+                System.out.println(" kukareku ");
             }
         });
         list.forEach(Sounding::sound);
